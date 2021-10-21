@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CCK_App.Views.NotPass">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="No puede pasar"
+                       TextColor="#DE1E1A"
+                       FontSize="50"
+                       Padding="0"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="CenterAndExpand" />
+                
+                <Image Source="cross_gif"
+                       WidthRequest="300"
+                       HeightRequest="300"
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand"
+                />
+            </StackLayout>
+            
+            <Label x:Name="NPMessage"
+                   FontSize="40"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Button Text="Cerrar"
+                    x:Name="CloseBtn"
+                    TextColor="White"
+                    BackgroundColor="#FF9300"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="45"
+                    WidthRequest="200"
+                    Clicked="CloseBtn_OnClicked"
+            />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
