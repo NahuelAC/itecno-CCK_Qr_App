@@ -23,7 +23,8 @@
             </StackLayout>
             
             <Label x:Name="NPMessage"
-                   FontSize="40"
+                   Text=""
+                   FontSize="25"
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"/>
 

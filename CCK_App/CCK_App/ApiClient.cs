@@ -4,9 +4,10 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using CCK_App.Models;
 using Newtonsoft.Json;
-using CCK_App.Models;
+using Plugin.DeviceInfo;
+using Xamarin.Essentials;
 
-namespace CCK_QR_App
+namespace CCK_App
 {
     public class ApiClient
     {
@@ -15,7 +16,6 @@ namespace CCK_QR_App
         public static async Task<List<Entradas>> ApiGetTicketsAll()
         {
             HttpResponseMessage res = await client.GetAsync("http://itecno.com.ar:3000/api/cck/tickets/all");
-            res.EnsureSuccessStatusCode();
             string resBody = await res.Content.ReadAsStringAsync();
 
             var data = JsonConvert.DeserializeObject<List<Entradas>>(resBody);
@@ -25,21 +25,28 @@ namespace CCK_QR_App
         public static async Task<List<Entradas>> ApiGetTicketsByDni(string dni)
         {
             HttpResponseMessage res = await client.GetAsync($"http://itecno.com.ar:3000/api/cck/tickets/bydni/{dni}");
-            res.EnsureSuccessStatusCode();
             string resBody = await res.Content.ReadAsStringAsync();
 
             var data = JsonConvert.DeserializeObject<List<Entradas>>(resBody);
             
             return data;
         }
-        public static async Task<List<Entradas>> ApiPutTicketIngresado(string dni, int idEventos, DateTime dt)
+        public static async Task<List<Entradas>> ApiPutTicketPreshow(int idEntradas)
         {
-            HttpResponseMessage res = await client.GetAsync($"http://itecno.com.ar:3000/api/cck/tickets/ingresado/{dni}/{idEventos}/{dt}");
-            res.EnsureSuccessStatusCode();
+            HttpResponseMessage res = await client.PutAsync($"http://itecno.com.ar:3000/api/cck/tickets/preshow/{idEntradas}/{CrossDeviceInfo.Current.Id}", null);
             string resBody = await res.Content.ReadAsStringAsync();
 
             var data = JsonConvert.DeserializeObject<List<Entradas>>(resBody);
             
+            return data;
+        }
+        public static async Task<List<Entradas>> ApiPutTicketShow(int idEntradas)
+        {
+            HttpResponseMessage res = await client.PutAsync($"http://itecno.com.ar:3000/api/cck/tickets/show/{idEntradas}/{CrossDeviceInfo.Current.Id}", null);
+            string resBody = await res.Content.ReadAsStringAsync();
+
+            var data = JsonConvert.DeserializeObject<List<Entradas>>(resBody);
+
             return data;
         }
 

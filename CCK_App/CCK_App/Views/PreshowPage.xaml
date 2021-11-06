@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CCK_App.Views.PreshowPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray">
+            <Frame>
+
+                <Label 
+                    Text="PRESHOW"
+                    FontSize="40"
+                    TextColor="#FF9300"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"/>
+
+            </Frame>
+
+            <ImageButton Source="Qr_Scanner"
+                         x:Name="btnScannerQR"
+                         Clicked="BtnScanPreshow_OnClicked"
+                         Aspect="Fill"
+                         HeightRequest="{OnPlatform iOS=320, Android=320}"
+                         WidthRequest="{OnPlatform iOS=320, Android=320}"
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="CenterAndExpand"
+                         VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Cerrar"
+                    x:Name="CloseBtn"
+                    Clicked="CloseBtn_OnClicked"
+                    TextColor="White"
+                    BackgroundColor="#FF9300"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    HeightRequest="45"
+                    WidthRequest="200"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

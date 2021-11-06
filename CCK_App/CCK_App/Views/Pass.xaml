@@ -5,6 +5,12 @@
              x:Class="CCK_App.Views.Pass">
     <ContentPage.Content>
         <StackLayout>
+            <Image Source="icon_logo"
+                   HeightRequest="75"
+                   WidthRequest="75"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"/>
+
             <Label Text="Puede pasar"
                    TextColor="#55ACAC"
                    FontSize="60"
@@ -18,6 +24,24 @@
                    VerticalOptions="Center"
                    HorizontalOptions="CenterAndExpand"
             />
+
+            <Label x:Name="Nombre"
+                   Text=""
+                   FontSize="25"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Label x:Name="Dni"
+                   Text=""
+                   FontSize="25"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Label x:Name="Bloque"
+                   Text=""
+                   FontSize="25"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"/>
 
             <Button Text="Cerrar"
                     x:Name="CloseBtn"

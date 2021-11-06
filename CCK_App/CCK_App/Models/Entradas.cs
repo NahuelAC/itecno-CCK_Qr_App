@@ -15,7 +15,7 @@ namespace CCK_App.Models
         public int idEventos { get; set; }
         public object idProvincia { get; set; }
         public object idLocalidad { get; set; }
-        public DateTime Preshow { get; set; }
+        public object Preshow { get; set; }
         public object Show { get; set; }
     }
 }

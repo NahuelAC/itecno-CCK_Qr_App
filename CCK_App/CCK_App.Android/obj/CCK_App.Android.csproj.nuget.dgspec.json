@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj": {}
+    "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj": {
+    "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
+        "projectUniqueName": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
         "projectName": "CCK_App.Android",
-        "projectPath": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
+        "projectPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
         "packagesPath": "C:\\Users\\NAHUEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App.Android\\obj\\",
+        "outputPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj": {
-                "projectPath": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj"
+              "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj": {
+                "projectPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj"
               }
             }
           }
@@ -44,9 +44,17 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.2.0.534, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             },
             "Xam.Plugin.DeviceInfo": {
               "target": "Package",
@@ -58,7 +66,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2196, )"
             },
             "ZXing.Net.Mobile": {
               "target": "Package",
@@ -67,23 +75,19 @@
             "ZXing.Net.Mobile.Forms": {
               "target": "Package",
               "version": "[2.4.1, )"
-            },
-            "sqlite-net-pcl": {
-              "target": "Package",
-              "version": "[1.8.116, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj": {
+    "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj",
+        "projectUniqueName": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj",
         "projectName": "CCK_App",
-        "projectPath": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj",
+        "projectPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj",
         "packagesPath": "C:\\Users\\NAHUEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NAHUEL\\RiderProjects\\CCK_App\\CCK_App\\CCK_App\\obj\\",
+        "outputPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -118,6 +122,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.2.0.534, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -127,6 +135,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             },
             "Xam.Plugin.DeviceInfo": {
               "target": "Package",
@@ -138,7 +150,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2196, )"
             },
             "ZXing.Net.Mobile": {
               "target": "Package",

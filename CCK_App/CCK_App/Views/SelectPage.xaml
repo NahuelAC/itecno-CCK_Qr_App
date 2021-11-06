@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CCK_App.Views.SelectPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame>
+
+                <ImageButton Source="LOGOARQTECH2" HorizontalOptions="Center" BackgroundColor="Transparent"
+                             x:Name="ConfigBtn" />
+
+            </Frame>
+            
+            <Label x:Name="modeLabel"
+                   Text="Centro Cultural Kirchner"
+                   TextColor="Gray"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Button Text="Show"
+                        x:Name="btnShow"
+                        Clicked="BtnShow_OnClicked"
+                        TextColor="White"
+                        BackgroundColor="#FF9300"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        HeightRequest="45"
+                        WidthRequest="200"
+                        Margin="25"
+                />
+
+                <Button Text="Pre Show"
+                        x:Name="btnPreshow"
+                        Clicked="BtnPreshow_OnClicked"
+                        TextColor="White"
+                        BackgroundColor="#FF9300"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        HeightRequest="45"
+                        WidthRequest="200"
+                        Margin="25"
+                />
+            </StackLayout>
+
+            <Label Text="Version 1.5"
+                   TextColor="Gray"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="0,0,0,15"/>
+            <Label x:Name="deviceNumber"
+                   TextColor="Gray"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="0,0,0,15"/>
+
+</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

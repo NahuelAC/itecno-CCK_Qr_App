@@ -21,7 +21,7 @@
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
     <key>MinimumOSVersion</key>
-    <string>14.7</string>
+    <string>8.0</string>
     <key>CFBundleDisplayName</key>
     <string>CCK_App</string>
     <key>CFBundleIdentifier</key>

@@ -19,7 +19,7 @@
         
         <ImageButton Source="Qr_Scanner"
                      x:Name="btnScannerQR"
-                     Clicked="BtnScannerQR_OnClicked"
+                     Clicked="BtnScanShow_OnClicked"
                      Aspect="Fill"
                      HeightRequest="{OnPlatform iOS=320, Android=320}"
                      WidthRequest="{OnPlatform iOS=320, Android=320}"
@@ -29,7 +29,7 @@
 
         <Button Text="Pre Show"
                 x:Name="btnInputDNI"
-                Clicked="BtnScanDNI_OnClicked"
+                Clicked="BtnScanPreshow_OnClicked"
                 TextColor="White"
                 BackgroundColor="#FF9300"
                 VerticalOptions="CenterAndExpand"

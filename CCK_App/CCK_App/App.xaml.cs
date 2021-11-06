@@ -13,7 +13,8 @@ namespace CCK_App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new SelectPage();
         }
 
         protected override void OnStart()

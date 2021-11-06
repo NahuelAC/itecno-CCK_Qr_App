@@ -2,8 +2,8 @@
 	.section	.rodata.env.str.1,"aMS",@progbits,1
 	.type	.L.env.str.1, @object
 .L.env.str.1:
-	.asciz	"com.companyname.CCK_App"
-	.size	.L.env.str.1, 24
+	.asciz	"com.arqytech.cck.qr"
+	.size	.L.env.str.1, 20
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
 	.p2align	3
@@ -52,8 +52,8 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.4,"aMS",@progbits,1
 	.type	.L.env.str.4, @object
 .L.env.str.4:
-	.asciz	"major=marksweep"
-	.size	.L.env.str.4, 16
+	.asciz	"major=marksweep-conc"
+	.size	.L.env.str.4, 21
 	.section	.rodata.env.str.5,"aMS",@progbits,1
 	.type	.L.env.str.5, @object
 .L.env.str.5:
@@ -72,7 +72,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"b00d3937-6e62-403b-bab1-edd683ed6233"
+	.asciz	"1100f88a-c074-4592-a42b-a3ac48d925ab"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
