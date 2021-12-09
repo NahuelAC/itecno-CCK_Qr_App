@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BPUz19fDrBHYDylVDvOdMrZhYaNr7aAp+78aMm+riikP7oOm90g0XIwnHz4griryo86qYxhYwHxFmiGACmRA8Q==",
+  "dgSpecHash": "QaR00a0hQlDL1s6C5Cj7mBmVaW3NCPi1B8O3SCHSG45vbID47dduKNTo94o1g0MDHvmhHlCfbbWBcky8EtpJKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj",
+  "projectFilePath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NAHUEL\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\NAHUEL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

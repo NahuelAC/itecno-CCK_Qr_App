@@ -47,12 +47,12 @@ namespace CCK_App.Views
                     int qr_bloque = Convert.ToInt32(qr_data[0]);
                     string qr_dni = qr_data[1];
                     DateTime qr_dt = Convert.ToDateTime(qr_data[2]);
+                    Entradas entrada = null;
 
                     if (CrossConnectivity.Current.IsConnected)
                     {
                         var data = await ApiClient.ApiGetTicketsByDni(qr_dni);
 
-                        Entradas entrada = null;
                         foreach (var d in data)
                         {
                             if (d.idEventos == qr_bloque)
@@ -66,8 +66,9 @@ namespace CCK_App.Views
                             if (entrada.Preshow == null)
                             {
                                 await ApiClient.ApiPutTicketPreshow(entrada.idEntradas);
+                                var evento = await ApiClient.ApiGetEventoById(entrada.idEventos);
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.idEventos));
+                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.Visitantes, evento.Evento));
                             }
                             else
                             {
@@ -88,7 +89,7 @@ namespace CCK_App.Views
                         UserDialogs.Instance.HideLoading();
                         if ( dt_actual.AddHours(-12).TimeOfDay > qr_dt.AddHours(-2).TimeOfDay)
                         {
-                            await Navigation.PushModalAsync(new Pass("", qr_dni, qr_bloque));
+                            await Navigation.PushModalAsync(new Pass("", qr_dni, 1));
                         }
                         else
                         {
@@ -112,6 +113,11 @@ namespace CCK_App.Views
                 else
                     await DisplayAlert("Error", exception.Message, "Ok");
             }
+        }
+
+        private async void InputDni_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new InputDniPS());
         }
     }
 }

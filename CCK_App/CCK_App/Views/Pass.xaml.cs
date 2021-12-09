@@ -12,13 +12,14 @@ namespace CCK_App.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Pass : ContentPage
     {
-        public Pass(string nombre, string dni, int bloque)
+        public Pass(string nombre, string dni, int visitantes, string evento = null)
         {
             InitializeComponent();
 
             Nombre.Text = nombre;
             Dni.Text = dni;
-            Bloque.Text = $"BLOQUE {bloque}";
+            Visitantes.Text = $"Visitantes: {visitantes}";
+            Evento.Text = $"{evento}";
         }
 
         private async void CloseBtn_OnClicked(object sender, EventArgs e)

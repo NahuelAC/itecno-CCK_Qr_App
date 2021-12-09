@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EdW0aldGytXFDmxz2CWK+zmpt5oHiJd3x6ULrSt0Gyf1SjNPCUd//rzzZM1GVS1OlHoulsZp4/56M7lUJJMvAA==",
+  "dgSpecHash": "zswMmcjcz4LKO2atWTOW/1ifO3uBPpeZ8NUWU0gTAmuvH74VJfyjRP5dziCSku9m83Gh7a6CXJRm3JkJKGkvPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App.iOS\\CCK_App.iOS.csproj",
+  "projectFilePath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.iOS\\CCK_App.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NAHUEL\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\NAHUEL\\.nuget\\packages\\btprogresshud\\1.3.4\\btprogresshud.1.3.4.nupkg.sha512",

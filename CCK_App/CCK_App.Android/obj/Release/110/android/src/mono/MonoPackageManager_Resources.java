@@ -26,11 +26,15 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.SwipeRefreshLayout.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"CCK_App.Android.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
+		"CCK_App.dll",
 		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Connectivity.Abstractions.dll",
+		"Plugin.Connectivity.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.DeviceInfo.dll",
 		"Xamarin.AndroidX.Activity.dll",
@@ -46,10 +50,6 @@ public class MonoPackageManager_Resources {
 		"ZXing.Net.Mobile.Forms.dll",
 		"zxing.portable.dll",
 		"ZXingNetMobile.dll",
-		"CCK_App.Android.dll",
-		"CCK_App.dll",
-		"Plugin.Connectivity.Abstractions.dll",
-		"Plugin.Connectivity.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

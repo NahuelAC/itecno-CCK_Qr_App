@@ -34,7 +34,7 @@
 
 	/* 3: CCK_App.dll */
 	/* uncompressed_file_size */
-	.long	42496
+	.long	55296
 	/* loaded */
 	.byte	0
 	/* data */

@@ -3759,21 +3759,21 @@
   "packageFolders": {
     "C:\\Users\\NAHUEL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
+      "projectUniqueName": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
       "projectName": "CCK_App.Android",
-      "projectPath": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
+      "projectPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
       "packagesPath": "C:\\Users\\NAHUEL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App.Android\\obj\\",
+      "outputPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
         "C:\\Users\\NAHUEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3791,8 +3791,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj": {
-              "projectPath": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App\\CCK_App.csproj"
+            "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj": {
+              "projectPath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App\\CCK_App.csproj"
             }
           }
         }

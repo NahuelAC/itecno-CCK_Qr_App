@@ -25,6 +25,17 @@
                          HorizontalOptions="CenterAndExpand"
                          VerticalOptions="CenterAndExpand" />
 
+            <Button Text="Ingresar DNI"
+                    x:Name="InputDni"
+                    Clicked="InputDni_OnClicked"
+                    TextColor="White"
+                    BackgroundColor="#FF9300"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    HeightRequest="45"
+                    WidthRequest="200"
+            />
+            
             <Button Text="Cerrar"
                     x:Name="CloseBtn"
                     Clicked="CloseBtn_OnClicked"

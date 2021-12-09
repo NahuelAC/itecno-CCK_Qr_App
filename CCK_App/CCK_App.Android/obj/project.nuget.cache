@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qp2hYz9iK7s2GlMc/AN+tN7GrI9Esnykensoec/4JB/ArVrPRweNrSILVFzoGHTwj2B3gMZc+3BvpBRPBfTQrA==",
+  "dgSpecHash": "m6OYrfTqV7Nc1fGRZa4B0QuH3sfCqfKE5ZYSU48EMqJh1HKzFK77mRtUhUwOwBHxBN+BJPgPOTeTLll7y/w5tA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NAHUEL\\source\\repos\\CCK_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
+  "projectFilePath": "C:\\Users\\NAHUEL\\Documents\\GitHub\\CCK_Qr_App\\CCK_App\\CCK_App.Android\\CCK_App.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NAHUEL\\.nuget\\packages\\acr.userdialogs\\7.2.0.534\\acr.userdialogs.7.2.0.534.nupkg.sha512",
     "C:\\Users\\NAHUEL\\.nuget\\packages\\andhud\\1.4.3\\andhud.1.4.3.nupkg.sha512",

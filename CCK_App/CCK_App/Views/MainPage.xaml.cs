@@ -59,7 +59,7 @@ namespace CCK_App.Views
                             {
                                 await ApiClient.ApiPutTicketShow(entrada.idEntradas);
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.idEventos));
+                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.Visitantes));
                             }
                             else
                             {
@@ -132,7 +132,7 @@ namespace CCK_App.Views
                             {
                                 await ApiClient.ApiPutTicketPreshow(entrada.idEntradas);
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.idEventos));
+                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.Visitantes));
                             }
                             else
                             {

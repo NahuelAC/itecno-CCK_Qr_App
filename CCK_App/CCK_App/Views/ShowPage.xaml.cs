@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Acr.UserDialogs;
 using CCK_App.Models;
+using Plugin.DeviceInfo;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -67,8 +69,9 @@ namespace CCK_App.Views
                             if (entrada.Show == null)
                             {
                                 await ApiClient.ApiPutTicketShow(entrada.idEntradas);
+                                var evento = await ApiClient.ApiGetEventoById(entrada.idEventos);
                                 UserDialogs.Instance.HideLoading();
-                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.idEventos));
+                                await Navigation.PushModalAsync(new Pass(entrada.Nombre, entrada.DNI, entrada.Visitantes, evento.Evento));
                             }
                             else
                             {
@@ -106,6 +109,11 @@ namespace CCK_App.Views
                 else
                     await DisplayAlert("Error", exception.Message, "Ok");
             }
+        }
+
+        private async void InputDni_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new InputDniS());
         }
     }
 }

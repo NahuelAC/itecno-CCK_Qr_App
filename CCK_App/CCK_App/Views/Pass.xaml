@@ -5,18 +5,12 @@
              x:Class="CCK_App.Views.Pass">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="icon_logo"
-                   HeightRequest="75"
-                   WidthRequest="75"
-                   VerticalOptions="Center"
-                   HorizontalOptions="CenterAndExpand"/>
 
-            <Label Text="Puede pasar"
-                   TextColor="#55ACAC"
-                   FontSize="60"
-                   Padding="0,100,0,0"
-                   VerticalOptions="Start" 
-                   HorizontalOptions="CenterAndExpand" />
+               <Label Text="Puede pasar"
+                      TextColor="#55ACAC"
+                      FontSize="60"
+                      VerticalOptions="Start" 
+                      HorizontalOptions="CenterAndExpand" />
             
             <Image Source="tick_gif"
                    WidthRequest="100"
@@ -36,8 +30,14 @@
                    FontSize="25"
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"/>
+               
+               <Label x:Name="Visitantes"
+                      Text=""
+                      FontSize="25"
+                      VerticalOptions="CenterAndExpand"
+                      HorizontalOptions="CenterAndExpand"/>
 
-            <Label x:Name="Bloque"
+            <Label x:Name="Evento"
                    Text=""
                    FontSize="25"
                    VerticalOptions="CenterAndExpand"
