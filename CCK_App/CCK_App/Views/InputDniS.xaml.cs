@@ -29,7 +29,7 @@ namespace CCK_App.Views
             var data = await ApiClient.ApiGetTicketsByDni(dni, null);
             foreach (var item in data)
             {
-                if (item.FechaV.Day == DateTime.Now.Day)
+                if (item.FechaV.Day == DateTime.Now.Day && item.Show == null)
                 {
                     await ApiClient.ApiPutTicketShow(item.idEntradas);
                     var evento = await ApiClient.ApiGetEventoById(item.idEventos);

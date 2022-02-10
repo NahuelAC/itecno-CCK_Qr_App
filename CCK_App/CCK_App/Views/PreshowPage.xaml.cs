@@ -8,6 +8,7 @@ using CCK_App.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
+using Plugin.DeviceInfo;
 
 namespace CCK_App.Views
 {
@@ -72,9 +73,15 @@ namespace CCK_App.Views
                             }
                             else
                             {
+                                string device = "";
+                                if (entrada.Sid == CrossDeviceInfo.Current.Id)
+                                    device = "En esta Terminal";
+                                else
+                                    device = "En otra Terminal";
+
                                 UserDialogs.Instance.HideLoading();
                                 await Navigation.PushModalAsync(
-                                    new NotPass($"Qr escaneado a las {Convert.ToDateTime(entrada.Preshow).ToString("hh:mm:ss")}"));
+                                    new NotPass($"Qr escaneado a las {Convert.ToDateTime(entrada.Preshow).ToString("hh:mm:ss")} \n{device}"));
                             }
                         }
                         else

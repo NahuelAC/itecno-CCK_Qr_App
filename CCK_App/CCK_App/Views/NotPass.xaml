@@ -28,17 +28,26 @@
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand"/>
 
-            <Button Text="Cerrar"
-                    x:Name="CloseBtn"
+            <Button Text="Proxima Entrada"
                     TextColor="White"
                     BackgroundColor="#FF9300"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="Center"
                     HeightRequest="45"
                     WidthRequest="200"
-                    Clicked="CloseBtn_OnClicked"
+                    Clicked="PEBtn_OnClicked"
             />
-            
+
+            <Button Text="Volver al Menu"
+                    TextColor="White"
+                    BackgroundColor="#FF9300"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    HeightRequest="45"
+                    WidthRequest="200"
+                    Clicked="BackToMenuBtn_OnClicked"
+            />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

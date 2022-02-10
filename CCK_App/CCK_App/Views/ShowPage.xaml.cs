@@ -75,9 +75,15 @@ namespace CCK_App.Views
                             }
                             else
                             {
+                                string device = "";
+                                if (entrada.Sid == CrossDeviceInfo.Current.Id)
+                                    device = "En esta Terminal";
+                                else
+                                    device = "En otra Terminal"; 
+
                                 UserDialogs.Instance.HideLoading();
                                 await Navigation.PushModalAsync(
-                                    new NotPass($"Qr escaneado a las {Convert.ToDateTime(entrada.Show).ToString("hh:mm:ss")}"));
+                                    new NotPass($"Qr escaneado a las {Convert.ToDateTime(entrada.Show).ToString("hh:mm:ss")} \n{device}"));
                             }
                         }
                         else
@@ -99,13 +105,18 @@ namespace CCK_App.Views
             {
                  UserDialogs.Instance.HideLoading();
                 string invalid_qr = "Index was outside";
+                string no_con = "Unable to resolve host";
                 string anerror = "Object reference not set to an instance of an object";
                 var x = exception.Message.IndexOf(invalid_qr);
                 var z = exception.Message.IndexOf(anerror);
+                var y = exception.Message.IndexOf(no_con);
                 if (x != -1)
                     await Navigation.PushModalAsync(
                         new NotPass("Codigo invalido"));
-                else if (z != -1) {}
+                else if (z != -1) { }
+                else if (y != -1)
+                    await Navigation.PushModalAsync(
+                        new NotPass("No tiene conexion a internet"));
                 else
                     await DisplayAlert("Error", exception.Message, "Ok");
             }

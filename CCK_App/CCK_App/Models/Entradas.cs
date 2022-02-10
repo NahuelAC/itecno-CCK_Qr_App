@@ -17,5 +17,7 @@ namespace CCK_App.Models
         public object idLocalidad { get; set; }
         public object Preshow { get; set; }
         public object Show { get; set; }
+        public object PreSid { get; set; }
+        public object Sid { get; set; }
     }
 }

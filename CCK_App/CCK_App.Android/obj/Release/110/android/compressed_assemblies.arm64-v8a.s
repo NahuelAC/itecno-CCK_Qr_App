@@ -35,7 +35,7 @@
 
 	/* 3: CCK_App.dll */
 	/* uncompressed_file_size */
-	.word	56832
+	.word	61952
 	/* loaded */
 	.byte	0
 	/* data */
