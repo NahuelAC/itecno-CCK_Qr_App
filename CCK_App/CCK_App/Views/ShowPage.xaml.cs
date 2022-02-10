@@ -53,7 +53,7 @@ namespace CCK_App.Views
                     if (true)
 
                     {
-                        var data = await ApiClient.ApiGetTicketsByDni(qr_dni);
+                        var data = await ApiClient.ApiGetTicketsByDni(qr_dni, qr_data[0]);
 
                         Entradas entrada = null;
                         foreach (var d in data)

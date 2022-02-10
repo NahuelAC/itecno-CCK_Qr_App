@@ -51,7 +51,7 @@ namespace CCK_App.Views
 
                     if (CrossConnectivity.Current.IsConnected)
                     {
-                        var data = await ApiClient.ApiGetTicketsByDni(qr_dni);
+                        var data = await ApiClient.ApiGetTicketsByDni(qr_dni, qr_data[0]);
 
                         foreach (var d in data)
                         {

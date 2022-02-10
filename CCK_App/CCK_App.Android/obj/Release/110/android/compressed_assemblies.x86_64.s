@@ -34,7 +34,7 @@
 
 	/* 3: CCK_App.dll */
 	/* uncompressed_file_size */
-	.long	55296
+	.long	56832
 	/* loaded */
 	.byte	0
 	/* data */
@@ -61,7 +61,7 @@
 
 	/* 6: Java.Interop.dll */
 	/* uncompressed_file_size */
-	.long	163840
+	.long	164352
 	/* loaded */
 	.byte	0
 	/* data */
@@ -70,7 +70,7 @@
 
 	/* 7: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.long	2330112
+	.long	2331136
 	/* loaded */
 	.byte	0
 	/* data */

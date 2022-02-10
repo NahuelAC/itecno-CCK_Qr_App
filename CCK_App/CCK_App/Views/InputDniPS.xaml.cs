@@ -26,7 +26,7 @@ namespace CCK_App.Views
         {
             var dni = EntryDni.Text;
             var can_pass = false;
-            var data = await ApiClient.ApiGetTicketsByDni(dni);
+            var data = await ApiClient.ApiGetTicketsByDni(dni, null);
             foreach (var item in data)
             {
                 if (item.FechaV.Day == DateTime.Now.Day)

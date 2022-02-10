@@ -16,10 +16,19 @@ namespace CCK_App.Views
         {
             InitializeComponent();
             NPMessage.Text = message;
+
+            delay();
+
         }
 
         private async void CloseBtn_OnClicked(object sender, EventArgs e)
         {
+            await Navigation.PopModalAsync();
+        }
+
+        private async void delay()
+        {
+            await Task.Delay(10000);
             await Navigation.PopModalAsync();
         }
     }

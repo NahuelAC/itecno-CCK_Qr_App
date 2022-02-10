@@ -23,9 +23,9 @@ namespace CCK_App
             
             return data;
         }
-        public static async Task<List<Entradas>> ApiGetTicketsByDni(string dni)
+        public static async Task<List<Entradas>> ApiGetTicketsByDni(string dni, string evento)
         {
-            HttpResponseMessage res = await client.GetAsync($"http://itecno.com.ar:3001/api/cck/tickets/bydni/{dni}");
+            HttpResponseMessage res = await client.GetAsync($"http://itecno.com.ar:3001/api/cck/tickets/bydni/{dni}/{evento}");
             string resBody = await res.Content.ReadAsStringAsync();
 
             var data = JsonConvert.DeserializeObject<List<Entradas>>(resBody);

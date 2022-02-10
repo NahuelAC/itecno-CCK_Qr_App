@@ -20,10 +20,18 @@ namespace CCK_App.Views
             Dni.Text = dni;
             Visitantes.Text = $"Visitantes: {visitantes}";
             Evento.Text = $"{evento}";
+
+            delay();
         }
 
         private async void CloseBtn_OnClicked(object sender, EventArgs e)
         {
+            await Navigation.PopModalAsync();
+        }
+
+        private async void delay()
+        {
+            await Task.Delay(10000);
             await Navigation.PopModalAsync();
         }
     }
